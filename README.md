@@ -527,6 +527,6 @@ MIT
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Piyush%20Joshi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piyush2707)
 ---
 
-Built with ❤️ by Welvox AI
+Built with ❤️ by Welvox 
 
 **One AI. Infinite Skills.** ✨
