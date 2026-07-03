@@ -14,7 +14,7 @@ Universal AI Operating System
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)
 
 </p>
-# WelvoxAgent - Universal AI Operating System
+## Universal AI Operating System
 
 **One AI. Infinite Skills.**
 
