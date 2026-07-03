@@ -1,3 +1,8 @@
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.11+-green.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)
+
 # WelvoxAgent - Universal AI Operating System
 
 **One AI. Infinite Skills.**
