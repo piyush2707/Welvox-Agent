@@ -505,8 +505,10 @@ MIT
 
 - GitHub Issues: [Report bugs](https://github.com/welvoxai/welvox-agent/issues)
 - Discussions: [Ask questions](https://github.com/welvoxai/welvox-agent/discussions)
-- Email: support@welvox.ai
+- Email: support@piyushsujaljoahi@gmail.com
+## 🤝 Connect
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Piyush%20Joshi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piyush2707)
 ---
 
 Built with ❤️ by Welvox AI
