@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="logo.png" width="180">
+</p>
+
+<h1 align="center">Welvox-Agent</h1>
+
+<p align="center">
+Universal AI Operating System
+</p>
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.11+-green.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)
