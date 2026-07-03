@@ -1,0 +1,29 @@
+{
+  "name": "welvox-agent",
+  "version": "1.0.0",
+  "description": "WelvoxAgent - Universal AI Operating System. One AI. Infinite Skills.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --recursive --parallel run dev",
+    "build": "pnpm --recursive run build",
+    "test": "pnpm --recursive run test",
+    "lint": "pnpm --recursive run lint",
+    "type-check": "pnpm --recursive run type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "clean": "pnpm --recursive run clean && rm -rf node_modules",
+    "db:migrate": "cd apps/api && alembic upgrade head",
+    "db:seed": "cd apps/api && python -m scripts.seed_db",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.3.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

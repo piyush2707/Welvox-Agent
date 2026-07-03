@@ -1,0 +1,13 @@
+packages:
+  - 'apps/web'
+  - 'apps/api'
+  - 'packages/ui'
+  - 'packages/agents'
+  - 'packages/skills'
+  - 'packages/prompts'
+  - 'packages/memory'
+  - 'packages/database'
+  - 'packages/auth'
+  - 'packages/shared'
+  - 'packages/utils'
+  - 'packages/types'

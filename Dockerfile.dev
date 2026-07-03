@@ -1,0 +1,26 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install pnpm
+RUN npm install -g pnpm
+
+# Copy monorepo config
+COPY pnpm-workspace.yaml .
+COPY package.json .
+COPY pnpm-lock.yaml* .
+
+# Install dependencies
+RUN pnpm install
+
+# Copy app code
+COPY apps/web ./apps/web
+COPY packages ./packages
+
+WORKDIR /app/apps/web
+
+# Expose port
+EXPOSE 3000
+
+# Development server
+CMD ["pnpm", "dev"]
