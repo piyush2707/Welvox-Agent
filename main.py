@@ -53,9 +53,14 @@ async def global_exception_handler(request: Request, exc: Exception):
     )
 
 
-# Health check endpoint
+# Root endpoint welcome message
+@app.get("/")
+def home():
+    return {"message": "Welcome to Welvox Agent! The system is up and running successfully."}
+
 @app.get("/health")
 async def health():
+    
     """Health check endpoint"""
     return {
         "status": "healthy",
