@@ -21,3 +21,4 @@ alembic
 pydantic-extra-types
 uvicorn
 gunicorn
+streamlit
