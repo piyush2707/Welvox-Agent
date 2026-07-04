@@ -84,8 +84,28 @@ async def shutdown_event():
 
 
 # Include routers
-# These will be created in separate files
-logger.info("WelvoxAgent API initialized successfully")
+import auth
+import agents
+import conversations
+import tasks
+import projects
+import files
+
+app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
+app.include_router(agents.router, prefix="/api/agents", tags=["AI Agents"])
+app.include_router(conversations.router, prefix="/api/conversations", tags=["Conversations & Chat"])
+app.include_router(tasks.router, prefix="/api/tasks", tags=["Task Management"])
+app.include_router(projects.router, prefix="/api/projects", tags=["Project Data"])
+app.include_router(files.router, prefix="/api/files", tags=["File Handling"])
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host=os.getenv("API_HOST", "0.0.0.0"),
+        port=int(os.getenv("API_PORT", 8000)),
+    )
+    
 
 
 if __name__ == "__main__":
