@@ -8,15 +8,14 @@ RUN apt-get update && apt-get install -y \
     postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements
-COPY apps/api/requirements.txt .
+# Copy requirements from root directory
+COPY requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy app code
-COPY apps/api .
-COPY packages /app/packages
+# Copy all application files from the flat structure
+COPY . .
 
 # Expose port
 EXPOSE 8000
